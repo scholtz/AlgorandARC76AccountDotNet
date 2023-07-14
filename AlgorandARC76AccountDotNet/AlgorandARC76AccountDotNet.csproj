@@ -15,10 +15,17 @@
     <RepositoryUrl>https://github.com/scholtz/AlgorandARC76AccountDotNet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Algorand;ARC76;Account generation</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Authors>Ludovit Scholtz</Authors>
+    <PackageId>AlgorandARC76Account</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\algorand-algo-logo-whtbck-512.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
