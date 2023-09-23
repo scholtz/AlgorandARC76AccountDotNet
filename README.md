@@ -25,3 +25,27 @@ Algorand.Algod.Model.Account account = AlgorandARC76AccountDotNet.ARC76.GetAccou
 ```c#
 Algorand.Algod.Model.Account account = AlgorandARC76AccountDotNet.ARC76.GetEmailAccount("email@example.com", "12345678901234567890123456789012345678901234567890");
 ```
+
+## ARC76Signer
+
+Configure your web api project with ARC76 signer configuration and the signer can sign transactions whenever it is required.
+
+### Usage
+
+Startup.cs:
+```
+builder.Services.Configure<AlgorandARC76AccountDotNet.Model.Config.ARC76Config>(builder.Configuration.GetSection("ARC76Config"));
+builder.Services.AddSingleton<AlgorandARC76AccountDotNet.Utils.ARC76Signer>();
+```
+
+MyController.cs
+
+```
+MyController(AlgorandARC76AccountDotNet.Utils.ARC76Signer signer ....){}
+
+void DoSomeAction(){
+...
+var signed = signer.Sign(new Transaction[] { tx1, tx2 });
+...
+}
+```
