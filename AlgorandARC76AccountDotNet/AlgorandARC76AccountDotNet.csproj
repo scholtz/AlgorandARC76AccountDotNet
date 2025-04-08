@@ -1,44 +1,44 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Algorand ARC76 Account</Title>
-    <Company>Scholtz&amp;Co</Company>
-    <Description>This library enables ARC76 account</Description>
-    <Copyright>Scholtz</Copyright>
-    <PackageProjectUrl>https://github.com/scholtz/AlgorandARC76AccountDotNet</PackageProjectUrl>
-    <PackageIcon>algorand-algo-logo-whtbck-512.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/scholtz/AlgorandARC76AccountDotNet</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>Algorand;ARC76;Account generation</PackageTags>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Authors>Ludovit Scholtz</Authors>
-    <PackageId>AlgorandARC76Account</PackageId>
-	  <Version>1.0.1</Version>
-  </PropertyGroup>
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Algorand ARC76 Account</Title>
+		<Company>Scholtz&amp;Co</Company>
+		<Description>This library enables ARC76 account</Description>
+		<Copyright>Scholtz</Copyright>
+		<PackageProjectUrl>https://github.com/scholtz/AlgorandARC76AccountDotNet</PackageProjectUrl>
+		<PackageIcon>algorand-algo-logo-whtbck-512.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/scholtz/AlgorandARC76AccountDotNet</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Algorand;ARC76;Account generation</PackageTags>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Authors>Ludovit Scholtz</Authors>
+		<PackageId>AlgorandARC76Account</PackageId>
+		<Version>1.0.2</Version>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\algorand-algo-logo-whtbck-512.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\LICENSE.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\algorand-algo-logo-whtbck-512.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Algorand2" Version="2.0.0.2023082310" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Algorand4" Version="4.0.2.2025030809" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.3" />
+	</ItemGroup>
 
 </Project>
