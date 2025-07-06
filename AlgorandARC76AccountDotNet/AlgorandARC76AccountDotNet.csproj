@@ -4,7 +4,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>Algorand ARC76 Account</Title>
+		<Title>Algorand ARC76 Account, EVM support</Title>
 		<Company>Scholtz&amp;Co</Company>
 		<Description>This library enables ARC76 account</Description>
 		<Copyright>Scholtz</Copyright>
@@ -17,7 +17,7 @@
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<Authors>Ludovit Scholtz</Authors>
 		<PackageId>AlgorandARC76Account</PackageId>
-		<Version>1.0.2</Version>
+		<Version>1.1.0</Version>
 		<TargetFramework>net8.0</TargetFramework>
 	</PropertyGroup>
 
@@ -37,8 +37,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Algorand4" Version="4.0.2.2025030809" />
-		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.3" />
+		<PackageReference Include="Algorand4" Version="4.0.3.2025051817" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.6" />
+		<PackageReference Include="Nethereum.Signer" Version="5.0.0" />
 	</ItemGroup>
 
 </Project>

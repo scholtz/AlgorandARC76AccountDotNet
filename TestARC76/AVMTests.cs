@@ -1,6 +1,6 @@
 namespace TestARC76
 {
-    public class UnitTests
+    public class AVMTests
     {
         [Test]
         public void GetPasswordAccountTest()
